@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style_signup.css">
+    <script src="login_signup.js"></script>
+    <script src="signup.js"></script>
+
+  </head>
+  <body>
+    <form>
+    <div class="logo_image">
+      <img src="logo.png" alt="logo_pic" class="logo">
+    </div>
+    
+    <div class="signup_content">
+      <label for="new_username"><b>New Username</b></label>
+      <input type="text" placeholder="Enter Username"  id="signupname"name="new_uname" required>
+
+      <label for="new_username"><b>New Email</b></label>
+      <input type="email" placeholder="Enter Email" id="signup_Email"name="new_email" required>
+
+      <label for="new_password"><b>New Password</b></label>
+      <input type="text" placeholder="Enter Password" id="signup_Password"name="new_psw" required>
+
+      <label for="role"><b>Select Role</b></label>
+      <select name="role" required>
+        <option value="admin">Admin</option>
+        <option value="member">Member</option>
+        <option value="user">User</option>
+      </select>
+
+      <button type="submit">Sign Up</button>
+      <p>Already have an account? <a href="index.html" onclick="toggleSignup()">Login</a></p>
+    </div>
+  </form>
+
+  </body>
+</html>
